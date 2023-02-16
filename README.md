@@ -1,5 +1,17 @@
-# Welcome to GitHub Desktop!
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+# <p align="center">❌ Puissance 4 ⭕</p>
+  
+Projet rélisé dans le cadre de la 1ère de BUT Informatique. Le but était d''apprendre les langages procéduraux en créant un jeu de puissance 4 avec un interface en ligne de commande.
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+## 🧐 Fonctionnalité
+- Joueur Contre Joueur
+        
+## 🛠️ Langage utilisé
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 
+
+#
+        
+
+
+        
+    
