@@ -1,6 +1,6 @@
 /**
  * @file Code_Source_Yanis_Fouad_1B2.c
- * @author Yanis Fouad 1B2
+ * @author Yanis Fouad
  * @brief Programme Puissance 4 en langage C
  */
 #include <stdlib.h>
