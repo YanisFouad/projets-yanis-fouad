@@ -1,5 +1,5 @@
 
-<h1 align="center">Bonjour, vous êtes ici sur le dépôt de mes projets 👋</h1>
+<h1 align="center">👋 Bonjour, vous êtes ici sur le dépôt de mes projets 👋</h1>
 <h3 align="center">Yanis Fouad | 18 ans</h3>
 
 - 📖 Étudiant en 1ère année de BUT Informatique à l'IUT de Lannion
