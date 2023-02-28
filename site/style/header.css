@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Aileron_regular';
+    src: url('../font/Aileron-Regular.woff2') format('woff2'),
+         url('../font/Aileron-Regular.woff') format('woff');
+
+}
+@font-face {
+    font-family: 'Aileron_bold';
+    src: url('../font/Aileron-Bold.woff2') format('woff2'),
+         url('../font/Aileron-Bold.woff') format('woff');
+
+}
+
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+
+
+#types,
+#localisation,
+#mer,
+#montagne,
+#international,
+#presentation,
+#contact,
+#avis {
+    visibility: hidden;
+    opacity: 0;
+    margin-top:0px ;
+    transition: opacity 0.5s, margin-top 0.5s;
+}
+
+header img{
+    width: 5.5em;
+}
+
+header li {
+    list-style: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: #0F61DB;
+    height: 5em;
+    padding: 0.5em;
+    
+}
+
+header>div{
+    display: inline-flex;
+}
+
+header nav{
+    display: inline-flex;
+    align-items:flex-start;
+    height: 50px;
+    position: relative;
+}
+
+
+header nav ul {
+    margin: 0;
+}
+
+h1{
+    font-family: "Aileron_bold", sans-serif;
+    font-size: 3em;
+    color: #DBD0BA;
+}
+
+header button{
+    font-size: 1.1em;
+    height: 2.5em;
+    padding:0.5em ;
+    background-color: #538CE1;
+    color: white;
+    border: none;
+}
+
+
+header li ul li{
+    width: 100%;
+    padding-top:0.9em ;
+    padding-bottom:0.9em ;
+    border-radius: 20px;
+    background-color: #0F61DB;
+}
+
+header li ul li>a{
+    color: white;
+    text-decoration: none;
+}
+
+header li ul{
+    text-align: center;
+    padding: 0;
+    height: 0px;
+}
+
+header ul li{
+    margin-right: 25px;
+}
+
+#sejours:hover{
+    background-color:white;
+    color:  #538CE1;
+}
+
+.barre{
+    height: 5px;
+    width: 50px;
+    background-color: black;
+    border: #DBD0BA 1px solid;
+}
+
+#menuDeroulantMobile{
+    display: none;
+    height: 50px;
+    
+}
+#finMenuDeroulant{
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+
+.barre_fermee{
+    height: 5px;
+    width: 40px;
+    background-color: black;
+}
+
+header nav figure{
+    display: none;
+    margin: 0;
+}
+
+header nav figure>img{
+    width: 12em;
+}
+
+header figure{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#finMenuDeroulant .barre_fermee:first-child{
+    transform: rotate(50deg) translate(2px, 0px);
+}
+
+#finMenuDeroulant .barre_fermee:last-child{
+    transform: rotate(130deg) translate(-5px, 0px);
+}
+
+@media (max-width : 1050px){
+    header>div figure{
+        order: 2;
+    }
+    header>div h1{
+        order: 1;
+    }
+    header>div{
+        order: 2;
+    }
+    header nav{
+        z-index: -1;
+        transform: translate(-500px);
+        opacity: 0;
+        order: 1;
+        position: fixed;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: #4AB2D3;
+        height: 100%;
+        width: 50%;
+        transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+        
+    }
+    header li ul{
+        height: max-content !important;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+    #menuDeroulantMobile{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #finMenuDeroulant{
+        visibility: visible;
+    }
+    header nav figure{
+        display: block;
+    }
+
+    header li ul li{
+        width: 100%;
+        padding-top:0.9em ;
+        padding-bottom:0.9em ;
+        border-radius: 0px;
+        background-color: #4AB2D3;
+    }
+    header button{
+        background-color:#4AB2D3;
+        transition:none;
+        transition: transform 0.5s;
+        font-size: 1.3em;
+        padding: 0;
+    }
+
+    header button:hover, #sejours:hover{
+        background-color:#4AB2D3;
+        color: white;
+        transform: scale(1.1);
+        transition:none;
+        transition: transform 0.5s;
+    }
+
+    #types,
+    #localisation,
+    #mer,
+    #montagne,
+    #international,
+    #presentation,
+    #contact,
+    #avis{
+        visibility: visible !important;
+        opacity: 1 !important;
+        padding: 10px;
+        padding-left: 50px;
+        text-align: left;
+        transition: none;
+}
+}
+
+
+@media (max-width : 700px){
+    header nav{
+        width: 75%;
+    }
+}
+
+
+@media (max-width : 500px){
+    header nav{
+        width: 100%;
+    }
+}
+
+@media (max-width : 470px){
+    h1{
+        font-size: 1.5em;
+        margin: auto;
+    }
+}

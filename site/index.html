@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sport Koh</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style/header.css"/>
+        <link rel="stylesheet" type="text/css" href="style/style_index.css" />
+        <link rel="stylesheet" type="text/css" href="style/footer.css" />
+        <link rel="icon" href="image/logo_6.png">
+    </head>
+    <body>
+        <script src="menuDeroulant.js"></script>
+
+        <header>
+            <div>
+                <figure>
+                    <a href="index.html"><img src="image/logo_6.png" title="Sport Koh" alt="Logo sport koh beige"></a>
+                    <!--Logo à gauche du header sans le nom de l'entrprise-->
+                </figure>
+                <h1>
+                    SPORT KOH
+                </h1>
+            </div>
+            
+            <!-- MENU DEROULANT POUR MOBILE -->
+            <div id="menuDeroulantMobile" onclick="activeDeroulant();">
+                <div class="barre"></div>
+                <div class="barre"></div>
+                <div class="barre"></div>
+            </div>
+    
+            <nav>
+                <!-- CROIX POUR FERMER LE MENU DEROULANT -->
+                <div id="finMenuDeroulant" onclick="desactiveDeroulant();">
+                    <div class="barre_fermee"></div>
+                    <div class="barre_fermee"></div>
+                </div>
+                <figure>
+                    <!--Logo dans le menu déroulant-->
+                    <img src="image/logo_3.png" title="Sport Koh" alt="Logo Sport Koh beige avec titre">
+                </figure>
+                
+                <ul>
+                    <!--Menu déroulant d'hébergement-->
+                    <li onmouseover="deroulantLien(document.getElementById('hebergement'));" onmouseout="deroulantLien(document.getElementById('hebergement'));"><button id='hebergement' class="noOpen">Hébérgement</button>
+                        <ul class="ul-modif">
+                            <li id="types"><a href="#">Types</a></li>
+                            <li id="localisation"><a href="hebergement.html">Localisation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <!--Menu déroulant du catalogue de séjours-->
+                    <li onmouseover="deroulantLien(document.getElementById('sejours'));" onmouseout="deroulantLien(document.getElementById('sejours'));"><button id="sejours" class="noOpen" onclick="document.location='catalogue.html';">Catalogue des séjours</button>
+                        <ul class="ul-modif">
+                            <li id="mer"><a href="#">Bord de mer</a></li>
+                            <li id="montagne"><a href="#">À la montagne</a></li>
+                            <li id="international"><a href="#">À l'international</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <!--Menu déroulant des informations sur l'association-->
+                    <li onmouseover="deroulantLien(document.getElementById('association'));" onmouseout="deroulantLien(document.getElementById('association'));"><button id="association" class="noOpen">L'association</button>
+                        <ul class="ul-modif">
+                            <li id="presentation"><a href="#">Présentation</a></li>
+                            <li id="contact"><a href="#">Contact</a></li>
+                            <li id="avis"><a href="#">Avis des clients</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+    
+        <div><!--Banderole qui envoie à la corse, à changer pour chaque page-->
+            <h2>LA CORSE LA NOUVELLE LOCALISATION PHARE</h2>
+        </div>
+        <main>
+            <section>
+                <article>
+                    <div>
+                        <figure class="pars">
+                            <img src="image/pub_corse1.png" title="Paysage de Corse" alt="Image de paysage de la Corse">
+                        </figure>
+                        <figure>
+                            <img src="image/pub_corse2.png" title="Paysage de Corse" alt="Image de paysage de la Corse">
+                        </figure>
+                    </div>
+                    <p>Pour en savoir plus sur la Corse et ses attraits touristique : <a href="page_des_attraits_touristiques.html">la Corse</a></p> 
+                </article>
+                <article>
+                    <h3>Bienvenue :</h3>
+                    <p>Nous sommes une structure sportive qui propose près de 40 activités. Notre but est d'ouvrir le sport à tous en vous proposant des séjours variés. En effet nous possédons 10 établissement dont 3 à l'étranger, ce qui vous laisse le choix de votre prochaine destination !</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <figure>
+                    <!--Logo à gauche du footer-->
+                    <img src="image/logo_3.png" title="Sport Koh" alt="Logo Sport Koh beige avec titre">
+                </figure>
+                <aside>
+                    <!--Créateur de la page-->
+                    <p>Ce site a été développé par :</p>
+                    <p>C.Yanis, T.Timothée, F.Yanis, P.Guillaume, D.Arthur</p>
+                </aside>
+            </div>
+            <!--Contact de l'entreprise-->
+            <address>Nous contacter <br><a href="mailto:sport.koh@gmail.com">sport.koh@gmail.com</a></address>
+    
+        </footer>  
+    </body>
+</html>

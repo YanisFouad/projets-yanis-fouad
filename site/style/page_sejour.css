@@ -1,0 +1,213 @@
+main{
+    padding: 1em;
+    background-color: white;
+}
+
+header+div{
+    background-color: #538CE1;
+    text-align: center;
+    padding: 0.6em;
+}
+h2{
+    font-family: "Aileron_bold", sans-serif;
+    font-size: 2em;
+    color: white;
+}
+h3{
+    font-family: "Aileron_regular", sans-serif;
+    font-size: 1.7em;
+}
+li{
+    font-family: "Aileron_regular", sans-serif;
+}
+
+p{
+    font-family: "Aileron_regular", sans-serif;
+    font-size: 1.3em;
+}
+span, h3{
+    text-decoration: underline;
+}
+main>div>figure>img{
+    width: 525px;
+}
+.un{
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+main>div>p{
+    text-align: center;
+}
+
+.deux{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin-bottom: 3em;
+}
+table{
+    width: 480px;
+}
+main>div>section{ 
+    font-size: 1.3em;
+}
+main>div>section>ul>li{
+    margin-bottom: 1em;
+    width: 500px;
+}
+
+.attention{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.avis_google{
+    display: flex;
+    justify-content: center;
+}
+.avis_google>figure>img{
+    margin-left: 2em;
+    width: 90%;
+}
+
+table, th, td {
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+
+th {
+    background-color: #0F61DB;
+    color: white;
+    font-size: 2em;
+}
+td {
+    background-color: #D9D9D9;
+    font-size: 1.7em;
+}
+
+.deroulant{
+    display: none;
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 607px;
+    height: auto;
+    background-color: #538CE1;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+nav>ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0;
+}
+.onglet{
+    width: 607px;
+    height: 85px;
+    background-color: #538CE1;
+    text-align: center;
+    line-height: 85px;
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+}
+
+.option{
+    position: relative;
+    text-align: left;
+    
+}
+
+.listoption{
+    font-size: 1.3em;
+}
+
+
+
+@media screen and (max-width: 920px) {
+    .avis_google{
+        display: none;
+    }
+    
+    .un{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    main>div>figure>img{
+        width: 20em;
+    }
+    .deux{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-flow: column-reverse ;
+    }
+    .liste_programme{
+        width: auto;
+    }
+    table{
+        width: 420px;
+        order: 2;
+    }
+    .attention{
+        order: 1;
+    }
+    div>section{
+        order: 0;
+    }
+    nav>ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .onglet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 85px;
+        line-height: 45px;
+    }
+    
+    
+    .deroulant{
+        width: 400px;
+    }
+
+    
+  }
+
+
+
+  @media screen and (max-width: 520px) {
+    table{
+        width: 250px;
+    }
+    .onglet{
+        width: 250px;
+        font-size: 1.2em;
+    }
+    
+    
+    .deroulant{
+        width: 250px;
+        font-size: 1.2em;
+    }
+
+    main>div>figure>img{
+        width: 15em;
+    }
+  }

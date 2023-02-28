@@ -1,0 +1,321 @@
+header+div {
+    background-color: #538CE1;
+    text-align: center;
+    padding: 0.6em;
+}
+
+h2 {
+    font-family: "Aileron_bold", sans-serif;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: "Aileron_regular", sans-serif;
+    font-size: 1.7em;
+}
+
+li {
+    font-family: "Aileron_regular", sans-serif;
+}
+
+p {
+    font-family: "Aileron_regular", sans-serif;
+    font-size: 1.3em;
+}
+
+section {
+    display: inline-flex;
+    background-color: white;
+    width: 100%;
+}
+
+article {
+    padding: 0px;
+    width: 100%;
+    min-width: 200px;
+}
+
+article+article {
+    padding-top: 90px;
+    width: 40%;
+    align-self: center;
+}
+
+iframe{
+    width: 80%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+main{
+    background-color: white;
+    padding: 0.5em;
+}
+
+#bungalow{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+/**/
+#bungalow img {
+    width: 100%;
+}
+#bungalow h2, #bungalow figure{
+    width: 100%;
+    margin : 20px 40px 5px;
+}
+
+#bungalow figure{
+    display :flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin : 0px 40px 10px;
+}
+#bungalow figure figcaption{
+    font-weight: 400;
+    font-size: 1.5em;
+    
+}
+
+#bungalow figure img{
+    width :2%;
+    margin: 0px 1%;
+}
+#bungalow figure+img{
+    width :97%;
+    padding: 0em 0.5em ;
+}
+#reservations {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding: 0.5em 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#reservations div{
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    background-color: #538CE1;
+    align-items: center;
+    width: 80%;
+    padding: 2px;
+    border: 2px solid black;
+    margin: 0% 1%;
+}
+
+#reservations div p {
+    flex-flow: row nowrap;
+    margin: 0px;
+}
+
+#reservations div em {
+    margin: 0px;
+    font-size: 1.1em;
+}
+
+
+
+#description {
+    border: 2px solid rgb(179, 179, 179);
+}
+
+#texte_description {
+    padding: 0px;
+    margin: 15px 10px;
+    font-size: 1.3em;
+    text-indent: 15%;
+}
+
+
+
+#tag {
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    margin: 0px 10px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#tag div p{
+    font-size: 1em;
+    margin:0px ;
+    padding : 10px;
+}
+
+#tag div{
+    display: inline-flex;
+    background-color: #dbd0ba;
+    width: auto;
+    margin:0px 10px;
+}
+
+#taille_logement{
+    padding: 15px 10%;
+    display: inline-flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#taille_logement p{
+    margin: 0px 0.5em 0px 1em;
+    justify-content: center;
+}
+
+.quatre_personnes{
+    display: inline-flex;
+    flex-flow: nowrap;
+}
+
+.deux_personnes{
+    display: inline-flex;
+    flex-flow: nowrap;
+}
+
+.deux_personnes p{
+    margin-left: 0px;
+    font-weight: bolder;
+}
+
+#restauration{
+    font-style: italic;
+    font-weight: 600;
+    text-indent: 0px;
+    padding: 0px;
+    margin: 15px 10px;
+    font-size: 1.3em;
+}
+
+section + section{
+    width: 100%;
+}
+
+section + section article h3{
+    padding-left: 0.5em;
+    text-decoration: underline;
+    text-align: left;
+}
+
+section + section article{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1650px){
+    #reservations div p {
+        font-size: 1.1em;
+    }
+    #reservations div em {
+        font-size: 1em;
+    }
+    #tag div p{
+        font-size: 0.7em;
+    }
+    #taille_logement p{
+        margin: 0px 0.25em;
+    }
+    #restauration{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 1350px){
+    #reservations div p {
+        font-size: 0.9em;
+    }
+    #reservations div em {
+        font-size: 0.8em;
+    }
+    #tag div p{
+        font-size: 0.6em;
+        padding: 10px 7px;
+    }
+}
+@media screen and (max-width: 1150px){
+    #reservations div p {
+        font-size: 0.8em;
+    }
+    #reservations div em {
+        font-size: 0.7em;
+    }
+    #tag div p{
+        font-size: 0.5em;
+        padding: 10px 5px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1050px){
+    section{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    article{
+        width :90%;
+        padding : 3% 4%;
+    }
+    article+article{
+        width :90%;
+        padding : 3% 4%;
+    }
+    #reservations div p {
+        font-size: 1.3em;
+    }
+    
+    #reservations div em {
+        font-size: 1.1em;
+    }
+    #tag div p{
+        font-size: 1em;
+    }
+    #bungalow h2, #bungalow figure{
+        width: 100%;
+        margin : 20px 0 5px;
+    }
+    #restauration{
+        font-size: 1.3em;
+    }
+    #taille_logement p{
+        font-size: 1em;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #reservations div p {
+        font-size: 1.1em;
+    }
+    
+    #reservations div em {
+        font-size: 1em;
+    }
+    #tag div p{
+        font-size: 0.8em;
+    }
+    article{
+        width :90%;
+        padding : 1.5% 2%;
+    }
+    article+article{
+        width :90%;
+        padding : 1.5% 2%;
+    }
+    #restauration{
+        font-size: 1.1em;
+    }
+
+    #taille_logement{
+        padding: 10px 5%;
+    }
+}

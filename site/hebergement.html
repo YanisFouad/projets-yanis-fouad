@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Séjours en Corse</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="stylesheet" type="text/css" href="style/hebergement.css">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <link rel="icon" href="image/logo_6.png">
+
+</head>
+
+<body>
+    <script src="menuDeroulant.js"></script>
+    <header>
+        <div>
+            <figure>
+                <a href="index.html"><img src="image/logo_6.png" title="Sport Koh" alt="Logo sport koh beige"></a>
+                <!--Logo à gauche du header sans le nom de l'entrprise-->
+            </figure>
+            <h1>
+                SPORT KOH
+            </h1>
+        </div>
+        
+        <!-- MENU DEROULANT POUR MOBILE -->
+        <div id="menuDeroulantMobile" onclick="activeDeroulant();">
+            <div class="barre"></div>
+            <div class="barre"></div>
+            <div class="barre"></div>
+        </div>
+
+        <nav>
+            <!-- CROIX POUR FERMER LE MENU DEROULANT -->
+            <div id="finMenuDeroulant" onclick="desactiveDeroulant();">
+                <div class="barre_fermee"></div>
+                <div class="barre_fermee"></div>
+            </div>
+            <figure>
+                <!--Logo dans le menu déroulant-->
+                <img src="image/logo_3.png" title="Sport Koh" alt="Logo Sport Koh beige avec titre">
+            </figure>
+            
+            <ul>
+                <!--Menu déroulant d'hébergement-->
+                <li onmouseover="deroulantLien(document.getElementById('hebergement'));" onmouseout="deroulantLien(document.getElementById('hebergement'));"><button id='hebergement' class="noOpen">Hébérgement</button>
+                    <ul class="ul-modif">
+                        <li id="types"><a href="#">Types</a></li>
+                        <li id="localisation"><a href="hebergement.html">Localisation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <!--Menu déroulant du catalogue de séjours-->
+                <li onmouseover="deroulantLien(document.getElementById('sejours'));" onmouseout="deroulantLien(document.getElementById('sejours'));"><button id="sejours" class="noOpen" onclick="document.location='catalogue.html';">Catalogue des séjours</button>
+                    <ul class="ul-modif">
+                        <li id="mer"><a href="#">Bord de mer</a></li>
+                        <li id="montagne"><a href="#">À la montagne</a></li>
+                        <li id="international"><a href="#">À l'international</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <!--Menu déroulant des informations sur l'association-->
+                <li onmouseover="deroulantLien(document.getElementById('association'));" onmouseout="deroulantLien(document.getElementById('association'));"><button id="association" class="noOpen">L'association</button>
+                    <ul class="ul-modif">
+                        <li id="presentation"><a href="#">Présentation</a></li>
+                        <li id="contact"><a href="#">Contact</a></li>
+                        <li id="avis"><a href="#">Avis des clients</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!--Article de gauche comprenant le titre, la localisation et l'image.-->
+            <article id="bungalow">
+                <h2>
+                    Village de la plage d'argent
+                </h2>
+                <figure>
+                    <img src="image/marqueur.png" alt="Marqueur de localisation">
+                    <figcaption>Anse de Verghia, 20138 Coti-Chiavari</figcaption>
+                </figure>
+                <img src="image/Bungalow.png" alt="Photo du bungalow">
+            </article>
+            <!--Article comprenant les boutons de réservations, description du logement, tag décrivant le logement ainsi que le nombre de gens et le self service-->
+            <article>
+                <!--boutons de réservations-->
+                <div id="reservations">
+                    <!--Boutons 1-->
+                    <div>
+                        <p>Réservez votre séjours</p>
+                        <em>pour 4 personnes</em>
+                    </div>
+                    <!--Bouton 2-->
+                    <div>
+                        <p>Réservez votre séjours</p>
+                        <em>pour 6 personnes</em>
+                    </div>
+                </div>
+                <!--Section de description du logement-->
+                <div id="description">
+                    <!--Description-->
+                    <p id="texte_description">
+                        Le village sportif se situe dans le golfe d’Ajaccio, à 300m de la plage d’Argent renommée pour ses eaux limpides. Bordée par le maquis, vous profiterez d’un environnement naturel où la végétation méditerranéenne se déploie à perte de vue.
+                    </p>
+                    <!--TAGS-->
+                    <div id="tag">
+                        <!--tag 1-->
+                        <div>
+                            <p>
+                                Base nautique
+                            </p>
+                        </div>
+                        <!--tag 2-->
+                        <div>
+                            <p>
+                                Piscine Exterieur
+                            </p>
+                        </div>
+                        <!--tag3-->
+                        <div>
+                            <p>
+                                Salle de sport
+                            </p>
+                        </div>
+                    </div>
+                    <!--Nombre de personne pour le logement-->
+                    <div id="taille_logement">
+                        <!--Les quatres premières silhouettes-->
+                        <div class="quatre_personnes">
+                            <img src="image/Silhouette.png" alt="Silhouette">
+                            <img src="image/Silhouette.png" alt="silhouette">
+                            <img src="image/Silhouette.png" alt="Silhouette">
+                            <img src="image/Silhouette.png" alt="silhouette">
+                        </div>
+
+                        <p>en option : </p>
+                        <!--Les deux dernières silhouettes-->
+                        <div class="deux_personnes">
+                            <p>
+                                +
+                            </p>
+                            <img src="image/Silhouette.png" alt="Silhouette">
+                            <img src="image/Silhouette.png" alt="silhouette">
+                        </div>
+                    </div>
+                    <!--Restauration-->
+                    <p id="restauration">Self-service ou paniers repas sur demande</p>
+                </div>
+            </article>
+        </section>
+        <!--Localisation et carte intéractive-->
+        <section>
+            <article>
+                <h3>Localisation :</h3>
+                <!--Carte interactive comme ca on se fait pas chier-->
+                <iframe src="https://www.google.com/maps/d/embed?mid=1lcPEQx5eg5zAhbLPyawmn6xoN4hvc2g&ehbc=2E312F" width="640" height="480"></iframe>    
+            </article>
+        </section>
+    
+    </main>
+    <footer>
+        <div>
+            <figure>
+                <!--Logo à gauche du footer-->
+                <img src="image/logo_3.png" title="Sport Koh" alt="Logo Sport Koh beige avec titre">
+            </figure>
+            <aside>
+                <!--Créateur de la page-->
+                <p>Ce site a été développé par :</p>
+                <p>C.Yanis, T.Timothée, F.Yanis, P.Guillaume, D.Arthur</p>
+            </aside>
+        </div>
+        <!--Contact de l'entreprise-->
+        <address>Nous contacter <br><a href="mailto:sport.koh@gmail.com">sport.koh@gmail.com</a></address>
+
+    </footer>
+</body>
+
+</html>

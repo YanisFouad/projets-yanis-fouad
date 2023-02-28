@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Retrouvez les plus beaux paysages de Corse avec son eau turquoise et sa nature flamboyante">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Page des attraits touristiques</title>
+
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="stylesheet" type="text/css" href="style/page_attraits_touristiques.css" />
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <link rel="icon" href="image/logo_6.png">
+</head>
+
+<body>
+    <script src="menuDeroulant.js"></script>
+    <header>
+        <div>
+            <figure>
+                <a href="index.html"><img src="image/logo_6.png" title="Sport Koh" alt="Logo sport koh beige"></a>
+                <!--Logo à gauche du header sans le nom de l'entrprise-->
+            </figure>
+            <h1>
+                SPORT KOH
+            </h1>
+        </div>
+        
+        <!-- MENU DEROULANT POUR MOBILE -->
+        <div id="menuDeroulantMobile" onclick="activeDeroulant();">
+            <div class="barre"></div>
+            <div class="barre"></div>
+            <div class="barre"></div>
+        </div>
+
+        <nav>
+            <!-- CROIX POUR FERMER LE MENU DEROULANT -->
+            <div id="finMenuDeroulant" onclick="desactiveDeroulant();">
+                <div class="barre_fermee"></div>
+                <div class="barre_fermee"></div>
+            </div>
+            <figure>
+                <!--Logo dans le menu déroulant-->
+                <img src="image/logo_3.png" title="Sport Koh" alt="Logo Sport Koh beige avec titre">
+            </figure>
+            
+            <ul>
+                <!--Menu déroulant d'hébergement-->
+                <li onmouseover="deroulantLien(document.getElementById('hebergement'));" onmouseout="deroulantLien(document.getElementById('hebergement'));"><button id='hebergement' class="noOpen">Hébérgement</button>
+                    <ul class="ul-modif">
+                        <li id="types"><a href="#">Types</a></li>
+                        <li id="localisation"><a href="hebergement.html">Localisation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <!--Menu déroulant du catalogue de séjours-->
+                <li onmouseover="deroulantLien(document.getElementById('sejours'));" onmouseout="deroulantLien(document.getElementById('sejours'));"><button id="sejours" class="noOpen" onclick="document.location='catalogue.html';">Catalogue des séjours</button>
+                    <ul class="ul-modif">
+                        <li id="mer"><a href="#">Bord de mer</a></li>
+                        <li id="montagne"><a href="#">À la montagne</a></li>
+                        <li id="international"><a href="#">À l'international</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <!--Menu déroulant des informations sur l'association-->
+                <li onmouseover="deroulantLien(document.getElementById('association'));" onmouseout="deroulantLien(document.getElementById('association'));"><button id="association" class="noOpen">L'association</button>
+                    <ul class="ul-modif">
+                        <li id="presentation"><a href="#">Présentation</a></li>
+                        <li id="contact"><a href="#">Contact</a></li>
+                        <li id="avis"><a href="#">Avis des clients</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div>
+        <h2>LES PLUS BEAUX PAYSAGES DE CORSE</h2>
+    </div>
+
+    <main>
+        <section>
+            <img src="images_touristiques/cochon_eau.png" alt="Cochons qui se baignent dans l'eau" title="Cochons des Îles-Lavezzi">
+            <article>
+                <h3>Les cochons de Corse</h3>
+                <p>En Corse, vous pouvez retrouver une nature pleine de vie. En effet, vous pouvez observer des cochons sauvages dans la belle eau turquoise des <span>îles Lavezzi !</span></p>
+            </article>
+        </section>
+        <section>
+            <img src="images_touristiques/montagne.png" alt="Montagne avec un lac en Corse" title="Paysage montagneuse de Corse">
+            <article>
+                <h3>Nature montagneuse</h3>
+                <p>Des paysages montagneux à couper le souffle. La Corse est connue pour sa beauté naturelle préservée depuis des générations. Dans ces sites vous pouvez décider de partir en randonnée et ainsi <span>ne faire qu’un avec la nature !</span></p>
+            </article>
+        </section>
+        <section>
+            <img src="images_touristiques/fusion_eau_roche.png" alt="Roche entourée d'eau turquoise" title="Roche et mer">
+            <article>
+                <h3>Fusion de la roche et de l'eau</h3>
+                <p>Sur les côtes, la mer et la roche fusionnent, ce qui produit un paysage paradisiaque unique au monde. Vous pouvez retrouver différentes criques attrayantes où vous avez la possibilité de vous baigner, de profiter et de <span>plonger dans vos
+                    vacances !</span>
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <figure>
+                <!--Logo à gauche du footer-->
+                <img src="image/logo_3.png" title="Sport Koh" alt="Logo Sport Koh beige avec titre">
+            </figure>
+            <aside>
+                <!--Créateur de la page-->
+                <p>Ce site a été développé par :</p>
+                <p>C.Yanis, T.Timothée, F.Yanis, P.Guillaume, D.Arthur</p>
+            </aside>
+        </div>
+        <!--Contact de l'entreprise-->
+        <address>Nous contacter <br><a href="mailto:sport.koh@gmail.com">sport.koh@gmail.com</a></address>
+
+    </footer>
+</body>
+
+</html>

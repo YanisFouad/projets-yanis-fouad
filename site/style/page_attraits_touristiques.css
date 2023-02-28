@@ -1,0 +1,73 @@
+header+div{
+    background-color: #538CE1;
+    text-align: center;
+    padding: 0.6em;
+}
+h2{
+    font-family: "Aileron_bold", sans-serif;
+    font-size: 2em;
+    color: white;
+}
+h3{
+    font-family: "Aileron_regular", sans-serif;
+    font-size: 1.7em;
+}
+li{
+    font-family: "Aileron_regular", sans-serif;
+}
+
+p{
+    font-family: "Aileron_regular", sans-serif;
+    font-size: 1.3em;
+}
+span, h3{
+    text-decoration: underline;
+}
+
+
+section{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-around;
+    height: max-content;
+    padding-top: 5.5em;
+    padding-bottom: 5.5em;
+}
+
+section+section{
+    flex-direction: row-reverse;
+    background-color: #F5F5F5;
+}
+section+section+section{
+    flex-direction: row;
+    background-color: white;
+}
+section img{
+    width: 40%;
+    text-align: center;
+}
+
+section article{
+    width: 35%;
+}
+
+
+@media (max-width: 950px){
+    section img{
+        width: 22em;
+    }
+    section,section+section, section+section+section{
+        flex-direction: column;
+    }
+    section article{
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 400px){
+    section img{
+        width: 18em;
+    }
+}

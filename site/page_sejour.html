@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1">
+    
+    <title>Page détaillée d'un séjours</title>
+
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="stylesheet" type="text/css" href="style/page_sejour.css">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+
+    <link rel="icon" href="image/logo_6.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script src="menuDeroulant.js"></script>
+    <header>
+        <div>
+            <figure>
+                <a href="index.html"><img src="image/logo_6.png" title="Sport Koh" alt="Logo sport koh beige"></a>
+                <!--Logo à gauche du header sans le nom de l'entrprise-->
+            </figure>
+            <h1>
+                SPORT KOH
+            </h1>
+        </div>
+        
+        <!-- MENU DEROULANT POUR MOBILE -->
+        <div id="menuDeroulantMobile" onclick="activeDeroulant();">
+            <div class="barre"></div>
+            <div class="barre"></div>
+            <div class="barre"></div>
+        </div>
+
+        <nav>
+            <!-- CROIX POUR FERMER LE MENU DEROULANT -->
+            <div id="finMenuDeroulant" onclick="desactiveDeroulant();">
+                <div class="barre_fermee"></div>
+                <div class="barre_fermee"></div>
+            </div>
+            <figure>
+                <!--Logo dans le menu déroulant-->
+                <img src="image/logo_3.png" title="Sport Koh" alt="Logo Sport Koh beige avec titre">
+            </figure>
+            
+            <ul>
+                <!--Menu déroulant d'hébergement-->
+                <li onmouseover="deroulantLien(document.getElementById('hebergement'));" onmouseout="deroulantLien(document.getElementById('hebergement'));"><button id='hebergement' class="noOpen">Hébérgement</button>
+                    <ul class="ul-modif">
+                        <li id="types"><a href="#">Types</a></li>
+                        <li id="localisation"><a href="hebergement.html">Localisation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <!--Menu déroulant du catalogue de séjours-->
+                <li onmouseover="deroulantLien(document.getElementById('sejours'));" onmouseout="deroulantLien(document.getElementById('sejours'));"><button id="sejours" class="noOpen" onclick="document.location='catalogue.html';">Catalogue des séjours</button>
+                    <ul class="ul-modif">
+                        <li id="mer"><a href="#">Bord de mer</a></li>
+                        <li id="montagne"><a href="#">À la montagne</a></li>
+                        <li id="international"><a href="#">À l'international</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <!--Menu déroulant des informations sur l'association-->
+                <li onmouseover="deroulantLien(document.getElementById('association'));" onmouseout="deroulantLien(document.getElementById('association'));"><button id="association" class="noOpen">L'association</button>
+                    <ul class="ul-modif">
+                        <li id="presentation"><a href="#">Présentation</a></li>
+                        <li id="contact"><a href="#">Contact</a></li>
+                        <li id="avis"><a href="#">Avis des clients</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div>
+        <h2>PLONGÉE AU COEUR DES CALANQUES CORSES</h2>
+    </div>
+
+    <main>
+        <div class="un">
+            <figure>
+                <img src="images_touristiques/calanques_piana.png" alt="Calanques de Piana" title="Calanques de Piana">
+            </figure>
+            <p>Découvrez les calanques de Piana, avec leurs roches granitiques, leurs couleurs extraordinaires et leurs eaux limpides. Partez en plongée au pied des falaises et observez une grande diversité de poissons méditerranéens : sarres, girelles, mérous, murènes, ... Dans cette réserve protégée, vous apprécierez la douceur méditerranéenne et son patrimoine unique.</p>
+        </div>
+        
+        <div class="deux">
+            <section>
+                <h3><u>Programme détaillé :</u></h3>
+                <ul>
+                    <li class="liste_programme">Jour d’arrivée : accueil à l’aéroport d’Ajaccio à 10h et transport en bus jusqu’au centre. Randonnée à la “tête de chien” pour apprécier les vues spectaculaires sur les calanques.</li>
+                    <li class="liste_programme">Jours 2 à 4 : 2 plongées quotidiennes sur les plus beaux sites de plongée des calanques avec le bateau du club.</li>
+                    <li class="liste_programme">Jour 5 : randonnée dans la forêt d’Ayton avec baignade dans les vasques des torrents le matin, parcours en VTT sur les routes forestières</li>
+                    <li class="liste_programme">Jour 6 : baignade sur la plage de Porto et repas dégustation de produits locaux (charcuterie, fromage, crème de marrons). Départ à l’aéroport à 18h.</li>
+                </ul>
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Dates et tarifs proposés :</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Du 16 au 22 Avril 2023</td>
+                        <td>750 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 23 au 29 avril </td>
+                        <td>750 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 30 Avril au 6 Mai 2023</td>
+                        <td>750 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 7 au 13 Mai 2023</td>
+                        <td>750 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 14 au 20 Mai 2023</td>
+                        <td>750 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 16 au 22 Juillet 2023</td>
+                        <td>850 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 23 au 29 Juillet 2023</td>
+                        <td>850 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 30 Juillet au 5 Août 2023</td>
+                        <td>950 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 6 au 12 Août 2023</td>
+                        <td>950 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 13 au 19 Août 2023</td>
+                        <td>950 €</td>
+                    </tr>
+                    <tr>
+                        <td>Du 20 au 26 Août 2023</td>
+                        <td>950 €</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">Tranche d’âge : 18 à 35 ans</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Intensité physique : 4/5</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <section class="attention">
+                <figure>
+                    <img src="image/signe_attention.png" title="Attention !" alt="Signe Attention">
+                </figure>
+                <p><strong>Niveau d’expertise dans le sport principal : 2 (niveau 1 de plongée exigé)</strong></p>
+            </section>
+        </div>
+        
+        <nav>
+            <ul>
+                <li>
+                    <div class="onglet">
+                        Équipements et prestations fournis
+                    </div>
+                    <div class="deroulant">
+                        <ul class="listoption">
+                            <li class="option">Hébergement et restauration en pension complète</li>
+                            <li class="option">6 séances de plongée avec moniteur</li>
+                            <li class="option">Combinaison de plongée</li>
+                            <li class="option">Détendeur</li>
+                            <li class="option">Masque</li>
+                            <li class="option">Palmes</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="onglet">
+                        Équipements et prestations non fournis
+                    </div>
+                    <div class="deroulant">
+                        <ul class="listoption">
+                            <li class="option">Le transport jusqu’à Ajaccio</li>
+                            <li class="option">Consommations au bar</li>
+                            <li class="option">Crème solaire</li>
+                            <li class="option">T-shirt anti-UV</li>
+                            <li class="option">Spray anti-moustiques</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="avis_google">
+            <figure>
+                <img src="image/avis_google.PNG" alt="Avis Google">
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <figure>
+                <!--Logo à gauche du footer-->
+                <img src="image/logo_3.png" title="Sport Koh" alt="Logo Sport Koh beige avec titre">
+            </figure>
+            <aside>
+                <!--Créateur de la page-->
+                <p>Ce site a été développé par :</p>
+                <p>C.Yanis, T.Timothée, F.Yanis, P.Guillaume, D.Arthur</p>
+            </aside>
+        </div>
+        <!--Contact de l'entreprise-->
+        <address>Nous contacter <br><a href="mailto:sport.koh@gmail.com">sport.koh@gmail.com</a></address>
+
+    </footer>
+    <script>
+        $('nav ul li').click(function(){
+            $(this).children('.deroulant').fadeToggle(300);
+        });
+        $(document).click(function(event) {
+            if (!$(event.target).closest('nav ul li').length) {
+                $('.deroulant').fadeOut(300);
+
+            }
+        });
+    </script>
+</body>
+
+</html>
