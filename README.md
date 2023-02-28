@@ -10,9 +10,9 @@ Projet rélisé dans le cadre de la 1ère de BUT Informatique. Le but était d'a
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 
 
 ## 🕹️ Utilisation
-1/ Compiler le programme
-2/ Executer le programme sous Linux
-3/ Jouer
+1. Compiler le programme
+2. Executer le programme sous Linux
+3. Jouer
         
 
 
