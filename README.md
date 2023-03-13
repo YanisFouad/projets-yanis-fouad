@@ -13,7 +13,7 @@ Projet personnel, le but était de créer une application permettant de jouer au
 
 ## 🛠️ Outils utilisés
 
-<a href="https://github.com/topics/c"><img src="https://raw.githubusercontent.com/github/explore/5b3600551e122a3277c2c5368af2ad5725ffa9a1/topics/java/java.png" alt="Java" width="40" height="40"/></a>
+<a href="https://github.com/topics/java"><img src="https://raw.githubusercontent.com/github/explore/5b3600551e122a3277c2c5368af2ad5725ffa9a1/topics/java/java.png" alt="Java" width="40" height="40"/></a>
 <a href="https://www.eclipse.org/"><img src="https://www.eclipse.org/downloads/assets/public/images/logo-eclipse.png" alt="Eclipse" width="40" height="40"/></a>
 
 ## 🕹️ Utilisation
